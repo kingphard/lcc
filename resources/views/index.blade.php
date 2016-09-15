@@ -70,11 +70,11 @@
 						<h2 class="section-title">GALLERY</h2>
 
 						<div class="row">
-							<div class="col-md-3 col-sm-6">
+							<div class="col-md-4 col-sm-8">
 								@foreach($img_cat as $img1)
 									@if($img1 -> categories_id == 4)
 								<div class="news">
-									<image class="news-image" src="..uploads/{{ $img1->file }}" height="70px"></image>
+									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
 									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
 
@@ -82,11 +82,15 @@
 								@endif
 								@endforeach
 							</div>
-							<div class="col-md-3 col-sm-6">
+							<div class="col-md-4 col-sm-8">
 								@foreach($img_cat as $img1)
 									@if($img1 -> categories_id == 5)
 								<div class="news">
+<<<<<<< HEAD
 									<img class="news-image" src="..uploads/{{ $img1->file }}" style="max-height: 250px"/>
+=======
+									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
+>>>>>>> 34a2e2888961809d2b73292804707aa9cb090b67
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
 									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
 
@@ -94,7 +98,7 @@
 								@endif
 								@endforeach
 							</div>
-							<div class="col-md-3 col-sm-6">
+							<div class="col-md-4 col-sm-8">
 								<div class="slides">
 								<?php $count =0; ?>
 								@foreach($img_cat as $img1)
@@ -104,7 +108,11 @@
 									
 								<div class="news">
 									
+<<<<<<< HEAD
 									<img class="news-image" src="..uploads/{{ $img1->file }}"  style="max-height: 180px"/>
+=======
+									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
+>>>>>>> 34a2e2888961809d2b73292804707aa9cb090b67
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
 									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
 								
@@ -114,14 +122,22 @@
 								@endforeach
 								</div>
 							</div>
+<<<<<<< HEAD
 							<div class="col-md-3 col-sm-6">
 								<div class="news">
 									<iframe width="230" height="180" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
 								</div>
 							</div>
+=======
+							
+>>>>>>> 34a2e2888961809d2b73292804707aa9cb090b67
 						</div> <!-- .row -->
 					</div> <!-- .container -->
 				</div> <!-- section -->
+
+				<div>
+					<center><iframe width="420" height="345" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe></center>
+				</div>
 
 				<div class="fullwidth-block">
 					<div class="container">
