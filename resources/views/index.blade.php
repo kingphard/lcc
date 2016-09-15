@@ -86,7 +86,7 @@
 								@foreach($img_cat as $img1)
 									@if($img1 -> categories_id == 5)
 								<div class="news">
-									<image class="news-image" src="..uploads/{{ $img1->file }}" height="78px"></image>
+									<img class="news-image" src="..uploads/{{ $img1->file }}" style="max-height: 250px"/>
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
 									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
 
@@ -96,29 +96,27 @@
 							</div>
 							<div class="col-md-3 col-sm-6">
 								<div class="slides">
-								<!--var count=0;-->
+								<?php $count =0; ?>
 								@foreach($img_cat as $img1)
-									<!--count++;-->
+									<?php if($count == 1) break; ?>
 									
-									@if($img1 -> categories_id == 4)
+									@if($img1 -> categories_id == 2)
 									
 								<div class="news">
 									
-									<image class="news-image" src="..uploads/{{ $img1->file }}" height="78px"></image>
+									<img class="news-image" src="..uploads/{{ $img1->file }}"  style="max-height: 180px"/>
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
 									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
 								
 								</div>
-								
+								<?php $count++ ?>
 								@endif
 								@endforeach
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-6">
 								<div class="news">
-									<image class="news-image" src="images/news-thumb-4.jpg"></image>
-									<h3 class="news-title"><a href="#">FETCH IMAGE DETAILS</a></h3>
-									<small class="date"><i class="fa fa-calendar"></i>FETCH TIMESTAMP</small>
+									<iframe width="230" height="180" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
 								</div>
 							</div>
 						</div> <!-- .row -->
