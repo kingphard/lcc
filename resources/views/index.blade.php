@@ -35,11 +35,11 @@
 						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 						<ul class="menu">
 							<li class="menu-item current-menu-item"><a href="index.html">Homepage <small>Welcome</small></a></li>
-							<li class="menu-item"><a href="#">Sermons<small>Listen to our Godly sermons</small></a></li>
-							<li class="menu-item"><a href="events.blade.php">Events <small>Events / Associations</small></a></li>
-							<li class="menu-item"><a href="families.blade.php">Mission <small>View our mission</small></a></li>
-							<li class="menu-item"><a href="#">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
-							<li class="menu-item"><a href="#">Contact <small>Contact us here</small></a></li>
+							<li class="menu-item"><a href="sermon">Sermons<small>Listen to our Godly sermons</small></a></li>
+							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
+							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
+							<li class="menu-item"><a href="gensup">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
+							<li class="menu-item"><a href="contact">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
 
