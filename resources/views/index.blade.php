@@ -34,12 +34,12 @@
 					<div class="main-navigation">
 						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 						<ul class="menu">
-							<li class="menu-item current-menu-item"><a href="index.html">Homepage <small>Welcome</small></a></li>
+							<li class="menu-item current-menu-item"><a href="/">Homepage <small>Welcome</small></a></li>
 							<li class="menu-item"><a href="sermons">Sermons<small>Listen to our Godly sermons</small></a></li>
 							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
 							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
 							<li class="menu-item"><a href="about_gen">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
-							<li class="menu-item"><a href="contacts">Contact <small>Contact us here</small></a></li>
+							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
 
@@ -198,7 +198,7 @@
 					</div> <!-- .container -->
 				</div> <!-- section -->
 			</main> <!-- .main-content -->
-
+			<div id="cont"><a name="cont">
 			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
@@ -273,6 +273,7 @@
 					<p class="colophon">Copyright &copy; 2016 www.llc.org. All right reserved</p>
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
+			</a></div>
 
 		</div>
 		

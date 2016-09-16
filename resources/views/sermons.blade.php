@@ -39,7 +39,7 @@
 							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
 							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
 							<li class="menu-item"><a href="about_gen">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
-							<li class="menu-item"><a href="contacts">Contact <small>Contact us here</small></a></li>
+							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
 
@@ -181,7 +181,7 @@
 					</div>
 				</div>
 			</main> <!-- .main-content -->
-
+	<div id="cont"><a name="cont">
 				<footer class="site-footer">
 				<div class="container">
 					<div class="row">
@@ -257,8 +257,7 @@
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
 
-
-		</div>
+			</a></div>
 
 		</div>
 		

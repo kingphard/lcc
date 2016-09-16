@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>True Church</title>
+		<title>Love Crusade | Chapel</title>
 
 		<!-- Loading third party fonts -->
 		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
 							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
 							<li class="menu-item current-menu-item"><a href="#">Mission <small>View our mission</small></a></li>
 							<li class="menu-item"><a href="about_gen">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
-							<li class="menu-item"><a href="contacts">Contact <small>Contact us here</small></a></li>
+							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
 
@@ -69,7 +69,7 @@
 				<p>Marriage: As a blessed institution ordained by God, the present generations definition point is negating the biblical definition. It is therefore for christians to understnad how God defines it. As it is unique among earthly relationship, significant in the lives of husbands and wives and especially the relationship between christ and his churdh.</p>
 				</div>
 			</main> <!-- .main-content -->
-
+			<div id="cont"><a name="cont">
 			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
@@ -144,9 +144,7 @@
 					<p class="colophon">Copyright &copy; 2016 www.llc.org. All right reserved</p>
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
-
-
-		</div>
+			</a></div>
 
 		</div>
 		

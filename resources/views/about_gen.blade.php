@@ -40,7 +40,7 @@
 							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
 							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
 							<li class="menu-item current-menu-item"><a href="#">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
-							<li class="menu-item"><a href="contacts">Contact <small>Contact us here</small></a></li>
+							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
 
@@ -62,7 +62,7 @@
 				</p>
 				</div>
 			</main> <!-- .main-content -->
-
+			<div id="cont"><a name="cont">
 				<footer class="site-footer">
 				<div class="container">
 					<div class="row">
@@ -139,7 +139,7 @@
 			</footer> <!-- .site-footer -->
 
 
-		</div>
+		</a></div>
 
 		</div>
 		

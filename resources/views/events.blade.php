@@ -39,7 +39,7 @@
 							<li class="menu-item current-menu-item"><a href="#">Events <small>Events / Associations</small></a></li>
 							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
 							<li class="menu-item"><a href="about_gen">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
-							<li class="menu-item"><a href="contacts">Contact <small>Contact us here</small></a></li>
+							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
 
@@ -162,8 +162,8 @@
 					</div>
 				</div>
 			</main> <!-- .main-content -->
-
-						<footer class="site-footer">
+				<div id="cont"><a name="cont">
+				<footer class="site-footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
@@ -237,6 +237,7 @@
 					<p class="colophon">Copyright &copy; 2016 www.llc.org. All right reserved</p>
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
+			</a></div>
 
 		</div>
 		
