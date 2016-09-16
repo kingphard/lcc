@@ -35,11 +35,11 @@
 						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 						<ul class="menu">
 							<li class="menu-item current-menu-item"><a href="index.html">Homepage <small>Welcome</small></a></li>
-							<li class="menu-item"><a href="sermon">Sermons<small>Listen to our Godly sermons</small></a></li>
+							<li class="menu-item"><a href="sermons">Sermons<small>Listen to our Godly sermons</small></a></li>
 							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
 							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
-							<li class="menu-item"><a href="gensup">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
-							<li class="menu-item"><a href="contact">Contact <small>Contact us here</small></a></li>
+							<li class="menu-item"><a href="about_gen">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
+							<li class="menu-item"><a href="contacts">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
 
@@ -68,75 +68,56 @@
 				<div class="fullwidth-block">
 					<div class="container">
 						<h2 class="section-title">GALLERY</h2>
-
 						<div class="row">
-							<div class="col-md-4 col-sm-8">
+							<div class="col-md-3 col-sm-8">
 								@foreach($img_cat as $img1)
 									@if($img1 -> categories_id == 4)
 								<div class="news">
 									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
 									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
-
 								</div>
 								@endif
 								@endforeach
 							</div>
-							<div class="col-md-4 col-sm-8">
+							<div class="col-md-3 col-sm-8">
 								@foreach($img_cat as $img1)
 									@if($img1 -> categories_id == 5)
 								<div class="news">
-<<<<<<< HEAD
 									<img class="news-image" src="..uploads/{{ $img1->file }}" style="max-height: 250px"/>
-=======
-									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
->>>>>>> 34a2e2888961809d2b73292804707aa9cb090b67
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
 									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
-
 								</div>
 								@endif
 								@endforeach
 							</div>
-							<div class="col-md-4 col-sm-8">
+							<div class="col-md-3 col-sm-8">
 								<div class="slides">
 								<?php $count =0; ?>
 								@foreach($img_cat as $img1)
 									<?php if($count == 1) break; ?>
-									
-									@if($img1 -> categories_id == 2)
-									
+									@if($img1 -> categories_id == 2)	
 								<div class="news">
-									
-<<<<<<< HEAD
 									<img class="news-image" src="..uploads/{{ $img1->file }}"  style="max-height: 180px"/>
-=======
-									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
->>>>>>> 34a2e2888961809d2b73292804707aa9cb090b67
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
 									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
-								
 								</div>
 								<?php $count++ ?>
 								@endif
 								@endforeach
 								</div>
 							</div>
-<<<<<<< HEAD
 							<div class="col-md-3 col-sm-6">
 								<div class="news">
 									<iframe width="230" height="180" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
 								</div>
 							</div>
-=======
-							
->>>>>>> 34a2e2888961809d2b73292804707aa9cb090b67
 						</div> <!-- .row -->
 					</div> <!-- .container -->
 				</div> <!-- section -->
 
 				<div>
-					<center><iframe width="420" height="345" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe></center>
+				<p>Love Crusade Chapel Headquarter church located in Kano State, Nigeria, West Africa. It is a church with the commission of deliverance, prosperity and preparing people for heaven, the encounter for each of these came at different time during the preparation period for the ministry. We have what we call comission declaration such as "God of my covenant appear for me" this is borne out of the threefold covenant which renew every first sunday - evening of each month. We also have another declaration which is "there is victory always in Jesus". The last one which we recite as benediction "I receive grace and determination from Jesus, for the kind of holiness of life that will take me to heaven at the end of my Journey on earth in the name of Jesus</p>
 				</div>
 
 				<div class="fullwidth-block">
@@ -149,7 +130,7 @@
 										<a href="#">
 											<h3 class="event-title">Covenant Sons Fellowship</h3><p>
 											
-												<span><i class="fa fa-map-marker"></i>( Every Friday of the month )</span>
+												<span>( Every Friday of the month )</span>
 										</p>
 										</a>
 									</li>
@@ -157,7 +138,7 @@
 										<a href="#">
 											<h3 class="event-title">Covenant Daughters Fellowship</h3><p>
 											
-												<span><i class="fa fa-calendar"></i>( First Wednesday of the month )</span>
+												<span>( First Wednesday of the month )</span>
 												
 
 										</p>	
@@ -167,7 +148,7 @@
 										<a href="#">
 											<h3 class="event-title">Youth Fellowship</h3><p>
 											
-												<span><i class="fa fa-calendar"></i>( Every month ) </span>
+												<span>( Every month ) </span>
 											</p>
 
 											
@@ -176,7 +157,7 @@
 									<li>
 										<a href="#">
 											<h3 class="event-title">Workers Meeting</h3><p>
-												<span><i class="fa fa-calendar"></i>( Every Saturday of the month )</span>
+												<span>( Every Saturday of the month )</span>
 										</a>	</p>
 									</li>
 								</ul>
@@ -227,11 +208,11 @@
 							<div class="widget">
 								<h3 class="widget-title">Our Branches</h3>
 								<ul class="bullet">
-									<li><i class="fa fa-map-marker"></i> Lagos State - 7 Iduware Street, Off Okunola Road, Lagos State</li>
-									<li><i class="fa fa-map-marker"></i> Abuja - Gwagwalada </li>
-									<li><i class="fa fa-phone"></i> Plateau State - Jos</li>
-									<li><i class="fa fa-phone"></i> Edo State - Benin</li>
-									<li><i class="fa fa-envelope"></i> Kano State - Badawa</li>
+									<li> Lagos State - 7 Iduware Street, Off Okunola Road, Lagos State</li>
+									<li> Abuja - Gwagwalada </li>
+									<li> Plateau State - Jos</li>
+									<li> Edo State - Benin</li>
+									<li> Kano State - Badawa</li>
 								</ul>
 									<br/>
 									<h3 class="widget-title">HEADQUARTER</h3>

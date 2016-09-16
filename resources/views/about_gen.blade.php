@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -35,10 +36,10 @@
 						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 						<ul class="menu">
 							<li class="menu-item"><a href="/">Homepage <small>Welcome</small></a></li>
-							<li class="menu-item"><a href="sermons">Sermons<small>Listen to our Godly sermons</small></a></li>
+							<li class="menu-item "><a href="sermons">Sermons<small>Listen to our Godly sermons</small></a></li>
 							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
-							<li class="menu-item current-menu-item"><a href="#">Mission <small>View our mission</small></a></li>
-							<li class="menu-item"><a href="about_gen">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
+							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
+							<li class="menu-item current-menu-item"><a href="#">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
 							<li class="menu-item"><a href="contacts">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
@@ -50,27 +51,19 @@
 
 			<div class="page-head" data-bg-image="images/page-head-1.jpg">
 				<div class="container">
-					<h2 class="page-title">MISSION</h2>
+					<h2 class="page-title">The Gen. Supretendent</h2>
 				</div>
 			</div>
 
 			<main class="main-content">
 				<div>
-				<p> Dying to self and living only by the power of the spirit of Jesus</p>
-				<p> Demonstrating the life of the kingdom to come</p>
-				</div>
-				<div>
-				<p> OUR STAND</p>
-				<p>FRIENDSHIP, COURTSHIP AND MARRIAGE</p>
-				<p> Many christians do not have an accurate bibilical perspective of the above mentioned factors.. The definition of the above are as follows:</p>
-				<p>Friendsihp: christian friendship is recognised as the unity between believers in christ through faith. It also expresses unity in loving, kind, holy and God pleasing relatioship with one another. we will grow you up on what christian friend is? what it means to have brother sister friendship in a christian community as we work in love</p>
-				<p> Courship: it is a unique transitional period in life when one moves from friendship to marriage. so in this case we will discuss how to conduct ourselves as christians in finding a spouse and getting married. We want to consider how a courple is to delight themselves in God, while pursuing marriage</p>
-
-				<p>Marriage: As a blessed institution ordained by God, the present generations definition point is negating the biblical definition. It is therefore for christians to understnad how God defines it. As it is unique among earthly relationship, significant in the lives of husbands and wives and especially the relationship between christ and his churdh.</p>
+				<p>
+					Apostle I.O Eruemulor is an Apostolic Prophet anointed to break the power of Saatan in the lives of people and move them by the power of the Holy spirit into their eathly and heavenly divine inheritance. this unique anointing on his life has made positive impact in the lives of so many. He is a destiny technocrat with strong drive to help people locate their places of fulfilment in life. He is the general superintedent of Love Crusade Chapel a.k.a (Consuming fire's camp). He is based in Kano from where he oversees other branches of the ministry. He is married to Pastor (Mrs) M.N Eruemulor who is also an anointed intercessor. The are blessed with three children: Davelyn Eruemulor, Emmanuel Eruemulor and David Eruemulor.
+				</p>
 				</div>
 			</main> <!-- .main-content -->
 
-			<footer class="site-footer">
+				<footer class="site-footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
