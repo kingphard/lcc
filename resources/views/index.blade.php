@@ -162,8 +162,8 @@
 									</li>
 								</ul>
 
-								<div class="text-center">
-									<a href="#" class="button">See all events</a>
+								<div class="text-left">
+									<a href="events" class="button">See all events</a>
 								</div>
 							</div>
 							<div class="col-md-6">
@@ -192,9 +192,7 @@
 									
 								</ul>
 
-								<div class="text-center">
-									<a href="#" class="button">SEE ALL BOOKS</a>
-								</div>
+								
 							</div>
 						</div> <!-- .row -->
 					</div> <!-- .container -->
