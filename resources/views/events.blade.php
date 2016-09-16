@@ -28,7 +28,7 @@
 				<div class="container">
 					<a href="#" class="branding">
 						<img src="images/logo.png" alt="" class="logo">
-						<h1 class="site-title">True Church</h1>
+						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
 
 					<div class="main-navigation">

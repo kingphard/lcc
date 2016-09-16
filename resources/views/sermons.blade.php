@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>True Church</title>
+		<title>Love Crusade | Chapel</title>
 
 		<!-- Loading third party fonts -->
 		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
@@ -28,7 +28,7 @@
 				<div class="container">
 					<a href="#" class="branding">
 						<img src="images/logo.png" alt="" class="logo">
-						<h1 class="site-title">True Church</h1>
+						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
 
 					<div class="main-navigation">

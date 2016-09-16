@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>True Church</title>
+		<title>Love Crusade | Chapel</title>
 
 		<!-- Loading third party fonts -->
 		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
@@ -28,7 +28,7 @@
 				<div class="container">
 					<a href="#" class="branding">
 						<img src="images/logo.png" alt="" class="logo">
-						<h1 class="site-title">True Church</h1>
+						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
 
 					<div class="main-navigation">
@@ -77,7 +77,8 @@
 									<li><i class="fa fa-map-marker"></i> 58, Ijebu Road Sabon Gari Fagge LGA, Kano State Nigeria</li>
 									<li><i class="fa fa-phone"></i> (+234) 8099833035</li>
 									<li><i class="fa fa-phone"></i> (+234) 8036790116</li>
-									<li><i class="fa fa-envelope"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-google-plus"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-facebook-square"></i><a href="www.facebook.com/lovecrusade"> www.facebook.com/lovecrusadechapel</a></li>
 								</ul>
 							</div>
 						</div>
