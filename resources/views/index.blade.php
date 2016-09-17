@@ -75,7 +75,7 @@
 								<div class="news">
 									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
-									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
+									
 								</div>
 								@endif
 								@endforeach
@@ -86,7 +86,7 @@
 								<div class="news">
 									<img class="news-image" src="..uploads/{{ $img1->file }}" style="max-height: 250px"/>
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
-									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
+									
 								</div>
 								@endif
 								@endforeach
@@ -100,17 +100,23 @@
 								<div class="news">
 									<img class="news-image" src="..uploads/{{ $img1->file }}"  style="max-height: 180px"/>
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
-									<small class="date"><i class="fa fa-calendar"></i>{{ $img1 -> created_at}}</small>
+									
 								</div>
 								<?php $count++ ?>
 								@endif
 								@endforeach
 								</div>
 							</div>
-							<div class="col-md-3 col-sm-6">
+							<div class="col-md-3 col-sm-8">
+								@foreach($img_cat as $img1)
+									@if($img1 -> categories_id == 6)
 								<div class="news">
-									<iframe width="230" height="180" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
+									<h3 class="news-title">{{ $img1 -> description}}</h3>
+									
 								</div>
+								@endif
+								@endforeach
 							</div>
 						</div> <!-- .row -->
 					</div> <!-- .container -->
@@ -255,14 +261,15 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<h3 class="widget-title">Contact form</h3>
-								<form action="#" class="contact-form">
+								<form action="/" method="POST" class="contact-form" value="{{ csrf_token() }}">
 									<div class="row">
-										<div class="col-md-6"><input type="text" placeholder="First name"></div>
-										<div class="col-md-6"><input type="text" placeholder="Lastname "></div>
-										<div class="col-md-12"><input type="text" placeholder="Email..."></div>
+										<div class="col-md-6"><input type="text" name="fname" placeholder="First name" required></div>
+										<div class="col-md-6"><input type="text" name="lname" placeholder="Lastname " required></div>
+										<div class="col-md-12"><input type="text" name="email" placeholder="Email..." required></div>
+										<div class="col-md-12"><input type="text" name="subject" placeholder="Subject..." required></div>
 									</div>
 									
-									<textarea name="" placeholder="Your message..."></textarea>
+									<textarea name="message" placeholder="Your message..." required></textarea>
 									<div class="text-right"><input type="submit" value="Send message"></div>
 									
 								</form>

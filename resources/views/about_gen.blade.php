@@ -39,7 +39,7 @@
 							<li class="menu-item "><a href="sermons">Sermons<small>Listen to our Godly sermons</small></a></li>
 							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
 							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
-							<li class="menu-item current-menu-item"><a href="#">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
+							<li class="menu-item current-menu-item"><a href="#">GEN.SUPERINTENDENT<small>About the Gen.Superintendent</small></a></li>
 							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
@@ -121,12 +121,13 @@
 								<h3 class="widget-title">Contact form</h3>
 								<form action="#" class="contact-form">
 									<div class="row">
-										<div class="col-md-6"><input type="text" placeholder="First name"></div>
-										<div class="col-md-6"><input type="text" placeholder="Lastname "></div>
-										<div class="col-md-12"><input type="text" placeholder="Email..."></div>
+										<div class="col-md-6"><input type="text" placeholder="First name" required></div>
+										<div class="col-md-6"><input type="text" placeholder="Lastname " required></div>
+										<div class="col-md-12"><input type="text" placeholder="Email..." required></div>
+										<div class="col-md-12"><input type="text" placeholder="Subject..." required></div>
 									</div>
 									
-									<textarea name="" placeholder="Your message..."></textarea>
+									<textarea name="" placeholder="Your message..." required></textarea>
 									<div class="text-right"><input type="submit" value="Send message"></div>
 									
 								</form>

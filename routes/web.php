@@ -27,7 +27,7 @@ Route::get('/video', 'VideoController@index');
 
 Route::post('/video', 'VideoController@store');
 
-Route::get('/messages', 'MessageController@index');
+Route::post('/', 'ContactController@store');
 
 Route::get('/', 'ImageController@index');
 
@@ -51,6 +51,10 @@ Route::get('/contacts', function(){
 
 Route::get('/about_gen', function(){
 	return view('about_gen');
+});
+
+Route::get('/messages', function(){
+	return view('message');
 });
 
 

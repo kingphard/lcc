@@ -221,12 +221,13 @@
 								<h3 class="widget-title">Contact form</h3>
 								<form action="#" class="contact-form">
 									<div class="row">
-										<div class="col-md-6"><input type="text" placeholder="First name"></div>
-										<div class="col-md-6"><input type="text" placeholder="Lastname "></div>
-										<div class="col-md-12"><input type="text" placeholder="Email..."></div>
+										<div class="col-md-6"><input type="text" placeholder="First name" required></div>
+										<div class="col-md-6"><input type="text" placeholder="Lastname " required></div>
+										<div class="col-md-12"><input type="text" placeholder="Email..." required></div>
+										<div class="col-md-12"><input type="text" placeholder="Subject..." required></div>
 									</div>
 									
-									<textarea name="" placeholder="Your message..."></textarea>
+									<textarea name="" placeholder="Your message..." required></textarea>
 									<div class="text-right"><input type="submit" value="Send message"></div>
 									
 								</form>

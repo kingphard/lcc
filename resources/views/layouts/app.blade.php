@@ -14,7 +14,10 @@
     <link href="{{ URL::asset('css/app.css')}}" rel="stylesheet">
     <link href="{{ URL::asset('css/jasny-bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{ URL::asset('css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{ URL::asset('css/mydes.css')}}" rel="stylesheet">
+    <link href="{{ URL::asset('css/iCheck/custom.css')}}" rel="stylesheet">
+    <link href="{{ URL::asset('css/animate.css')}}" rel="stylesheet">
+    <link href="{{ URL::asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{ URL::asset('font-awesome/css/font-awesome.css')}}" rel="stylesheet">
     
 
     <!-- Scripts -->
@@ -105,6 +108,13 @@
 
     <!-- Scripts -->
     <script src="{{ URL::asset('js/app.js')}}"></script>
-     <script src="{{ URL::asset('js/jasny-bootstrap.min.js')}}"></script>
+    <script src="{{ URL::asset('js/jasny-bootstrap.min.js')}}"></script>
+    <script src="{{ URL::asset('js/design.js')}}"></script>
+    <script src="{{ URL::asset('js/iCheck/icheck.min.js')}}"></script>
+    <script src="{{ URL::asset('js/jquery.metisMenu.js')}}"></script>
+    <script src="{{ URL::asset('js/plugins.js')}}"></script>
+    <script src="{{ URL::asset('js/pace/pace.min.js')}}"></script>
+    <script src="{{ URL::asset('js/inspinia.js')}}"></script>
+    <script src="{{ URL::asset('js/slimscroll/jquery.slimscroll.min.js')}}"></script>
 </body>
 </html>
