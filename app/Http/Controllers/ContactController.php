@@ -18,12 +18,12 @@ class ContactController extends Controller
         $lname = $request->input("lname");
         $email = $request->input("email");
         $subject = $request->input("subject");
-        $contact = $request->input("contact");
-        $contact->fname =  $fname;
+        $message = $request->input("message");
+		$contact->fname =  $fname;
         $contact->lname =  $lname;
         $contact->email =  $email;
-        $contact->subject =  $subject;
-        $contact->message =  $message;
+        $contact->subject = $subject;
+        $contact->message = $message;
         $contact->save();
        
     return redirect('/')->with('status', 'Message Sent to Admin, check your mail later to receive reply');

@@ -42,6 +42,13 @@
 							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
+					<div>
+						@if(session('status'))
+                    	<div class="alert alert-success">
+                        {{ session('status') }} 
+                    	</div>
+                		@endif
+					</div>
 
 					<div class="mobile-navigation"></div>
 				</div>
@@ -261,7 +268,7 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<h3 class="widget-title">Contact form</h3>
-								<form action="/" method="POST" class="contact-form" value="{{ csrf_token() }}">
+								<form action="/" method="POST" class="contact-form" value="csrf_token()">
 									<div class="row">
 										<div class="col-md-6"><input type="text" name="fname" placeholder="First name" required></div>
 										<div class="col-md-6"><input type="text" name="lname" placeholder="Lastname " required></div>
