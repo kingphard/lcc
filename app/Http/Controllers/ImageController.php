@@ -21,4 +21,10 @@ class ImageController extends Controller
     	$img_cate = image::all();
      	return view('events')->with('img_cate', $img_cate);
     }
+    public function indexgen()
+    {
+
+    $img_cat = image::all();
+     	return view('/about_gen')->with('img_cat', $img_cat);
+    }
 }

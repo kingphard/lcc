@@ -27,9 +27,15 @@
 			<header class="site-header">
 				<div class="container">
 					<a href="#" class="branding">
-						<img src="images/logo.png" alt="" class="logo">
+						<img src="images/logg.jpg" height="60" width="60" alt="" class="logo">
 						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
+					@if(session('status'))
+					<div class="alert alert-success">
+						<h2>MESSAGE SENT</h2>
+                        {{ session('status') }} 
+                		@endif	
+					</div>
 
 					<div class="main-navigation">
 						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
@@ -41,13 +47,6 @@
 							<li class="menu-item"><a href="about_gen">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
 							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
 						</ul>
-					</div>
-					<div>
-						@if(session('status'))
-                    	<div class="alert alert-success">
-                        {{ session('status') }} 
-                    	</div>
-                		@endif
 					</div>
 
 					<div class="mobile-navigation"></div>
@@ -128,10 +127,17 @@
 						</div> <!-- .row -->
 					</div> <!-- .container -->
 				</div> <!-- section -->
-
-				<div>
-				<p>Love Crusade Chapel Headquarter church located in Kano State, Nigeria, West Africa. It is a church with the commission of deliverance, prosperity and preparing people for heaven, the encounter for each of these came at different time during the preparation period for the ministry. We have what we call comission declaration such as "God of my covenant appear for me" this is borne out of the threefold covenant which renew every first sunday - evening of each month. We also have another declaration which is "there is victory always in Jesus". The last one which we recite as benediction "I receive grace and determination from Jesus, for the kind of holiness of life that will take me to heaven at the end of my Journey on earth in the name of Jesus</p>
+				<div class="container">
+  				<h1><marquee>WELCOME</marquee></h1>
+  				<div class="panel panel-default">
+    			<div class="panel-body">
+    				<p>Love Crusade Chapel Headquarter church located in Kano State, Nigeria, West Africa. It is a church with the commission of deliverance, prosperity and preparing people for heaven, the encounter for each of these came at different time during the preparation period for the ministry. We have what we call comission declaration such as "God of my covenant appear for me" this is borne out of the threefold covenant which renew every first sunday - evening of each month. We also have another declaration which is "there is victory always in Jesus". The last one which we recite as benediction "I receive grace and determination from Jesus, for the kind of holiness of life that will take me to heaven at the end of my Journey on earth in the name of Jesus</p>
+    			</div>
+  				</div>
 				</div>
+				
+				
+				
 
 				<div class="fullwidth-block">
 					<div class="container">

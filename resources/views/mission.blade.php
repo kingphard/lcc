@@ -27,7 +27,7 @@
 			<header class="site-header">
 				<div class="container">
 					<a href="#" class="branding">
-						<img src="images/logo.png" alt="" class="logo">
+						<img src="images/logg.jpg" height="60" width="60" alt="" class="logo">
 						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
 
@@ -55,19 +55,34 @@
 			</div>
 
 			<main class="main-content">
-				<div>
-				<p> Dying to self and living only by the power of the spirit of Jesus</p>
-				<p> Demonstrating the life of the kingdom to come</p>
-				</div>
-				<div>
-				<p> OUR STAND</p>
-				<p>FRIENDSHIP, COURTSHIP AND MARRIAGE</p>
-				<p> Many christians do not have an accurate bibilical perspective of the above mentioned factors.. The definition of the above are as follows:</p>
-				<p>Friendsihp: christian friendship is recognised as the unity between believers in christ through faith. It also expresses unity in loving, kind, holy and God pleasing relatioship with one another. we will grow you up on what christian friend is? what it means to have brother sister friendship in a christian community as we work in love</p>
-				<p> Courship: it is a unique transitional period in life when one moves from friendship to marriage. so in this case we will discuss how to conduct ourselves as christians in finding a spouse and getting married. We want to consider how a courple is to delight themselves in God, while pursuing marriage</p>
 
-				<p>Marriage: As a blessed institution ordained by God, the present generations definition point is negating the biblical definition. It is therefore for christians to understnad how God defines it. As it is unique among earthly relationship, significant in the lives of husbands and wives and especially the relationship between christ and his churdh.</p>
+				<div class="container">
+  				<h2><marquee>OUR MISSIONS INCLUDE</marquee></h2>
+  				<div class="panel panel-default">
+    			<div class="panel-body">
+    			<ul>
+    			<li> Dying to self and living only by the power of the spirit of Jesus</li>
+				<li> Demonstrating the life of the kingdom to come</li>
+				</ul>
+				<br>
+				<h2><marquee>OUR STAND</marquee></h2>
+				<p><strong>FRIENDSHIP, COURTSHIP AND MARRIAGE</strong></p>
+				<p> Many christians do not have an accurate bibilical perspective of the above mentioned factors.. The definition of the above are as follows:</p>
+				<p><strong>Friendsihp:</strong> christian friendship is recognised as the unity between believers in christ through faith. It also expresses unity in loving, kind, holy and God pleasing relatioship with one another. we will grow you up on what christian friend is? what it means to have brother sister friendship in a christian community as we work in love</p>
+				<p><strong>Courship: </strong> it is a unique transitional period in life when one moves from friendship to marriage. so in this case we will discuss how to conduct ourselves as christians in finding a spouse and getting married. We want to consider how a courple is to delight themselves in God, while pursuing marriage</p>
+
+				<p><strong> Marriage:</strong> As a blessed institution ordained by God, the present generations definition point is negating the biblical definition. It is therefore for christians to understnad how God defines it. As it is unique among earthly relationship, significant in the lives of husbands and wives and especially the relationship between christ and his churdh.</p>
+    				
+  				</div>
 				</div>
+
+
+				<div>
+				
+				</div>
+				
+				
+				
 			</main> <!-- .main-content -->
 			<div id="cont"><a name="cont">
 			<footer class="site-footer">
@@ -126,15 +141,15 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<h3 class="widget-title">Contact form</h3>
-								<form action="#" class="contact-form">
+								<form action="/" method="POST" class="contact-form" value="csrf_token()">
 									<div class="row">
-										<div class="col-md-6"><input type="text" placeholder="First name" required></div>
-										<div class="col-md-6"><input type="text" placeholder="Lastname " required></div>
-										<div class="col-md-12"><input type="text" placeholder="Email..." required></div>
-										<div class="col-md-12"><input type="text" placeholder="Subject..." required></div>
+										<div class="col-md-6"><input type="text" name="fname" placeholder="First name" required></div>
+										<div class="col-md-6"><input type="text" name="lname" placeholder="Lastname " required></div>
+										<div class="col-md-12"><input type="text" name="email" placeholder="Email..." required></div>
+										<div class="col-md-12"><input type="text" name="subject" placeholder="Subject..." required></div>
 									</div>
 									
-									<textarea name="" placeholder="Your message..." required></textarea>
+									<textarea name="message" placeholder="Your message..." required></textarea>
 									<div class="text-right"><input type="submit" value="Send message"></div>
 									
 								</form>

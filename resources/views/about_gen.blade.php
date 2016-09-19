@@ -9,16 +9,16 @@
 		<title>Love Crusade | Chapel</title>
 
 		<!-- Loading third party fonts -->
-		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="{{ URL::asset('fonts/novecento-font/novecento-font.css')}}" rel="stylesheet">
+		<link href="{{ URL::asset('fonts/font-awesome.min.css')}}" rel="stylesheet">
 
 		<!-- Loading main css file -->
-		<link rel="stylesheet" href="style.css">
+		<link href="{{ URL::asset('style.css')}}" rel="stylesheet">
 		
-		<!--[if lt IE 9]-->
+		<!--[if lt IE 9]
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
-		<!--[endif]-->
+		[endif]-->
 
 	</head>
 
@@ -28,7 +28,7 @@
 			<header class="site-header">
 				<div class="container">
 					<a href="#" class="branding">
-						<img src="images/logo.png" alt="" class="logo">
+						<img src="images/logg.jpg" height="60" width="60" alt="" class="logo">
 						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
 
@@ -54,16 +54,42 @@
 					<h2 class="page-title">The Gen. Supretendent</h2>
 				</div>
 			</div>
-
-			<main class="main-content">
-				<div>
-				<p>
-					Apostle I.O Eruemulor is an Apostolic Prophet anointed to break the power of Saatan in the lives of people and move them by the power of the Holy spirit into their eathly and heavenly divine inheritance. this unique anointing on his life has made positive impact in the lives of so many. He is a destiny technocrat with strong drive to help people locate their places of fulfilment in life. He is the general superintedent of Love Crusade Chapel a.k.a (Consuming fire's camp). He is based in Kano from where he oversees other branches of the ministry. He is married to Pastor (Mrs) M.N Eruemulor who is also an anointed intercessor. The are blessed with three children: Davelyn Eruemulor, Emmanuel Eruemulor and David Eruemulor.
-				</p>
+			<div class="col-md-6">
+			<div class="hero">
+				<div class="slides">
+				@foreach ($img_cat as $img)
+					@if($img->categories_id == 2)
+					<li data-bg-image="..uploads/{{ $img->file }}">
+						<div class="container">
+						
+							<div class="slide-content">
+								<small class="slide-subtitle" style="text-shadow: 2px 2px #FF0000;">
+								</small>
+								<h2 class="slide-title" style="text-shadow: 2px 2px #FF0000;"></h2>
+							</div>
+						</div>
+					</li>
+				@endif
+					@endforeach
 				</div>
-			</main> <!-- .main-content -->
+			</div>
+			</div>
+			<div class="container ">
+  				<div class="panel panel-default">
+    				<div class="panel-body">
+    					<p style="text-shadow: 1px 1px #FF0000;"><br><br><br><br><br>
+					Apostle I.O Eruemulor is an Apostolic Prophet anointed to break the power of Saatan in the lives of people and move them by the power of the Holy spirit into their eathly and heavenly divine inheritance. this unique anointing on his life has made positive impact in the lives of so many. He is a destiny technocrat with strong drive to help people locate their places of fulfilment in life. He is the general superintedent of Love Crusade Chapel a.k.a (Consuming fire's camp). He is based in Kano from where he oversees other branches of the ministry. He is married to Pastor (Mrs) M.N Eruemulor who is also an anointed intercessor. The are blessed with three children: Davelyn Eruemulor, Emmanuel Eruemulor and David Eruemulor.
+						</p>
+    				
+    				</div>
+  				</div>
+			</div>
+				
+				
+
+		
 			<div id="cont"><a name="cont">
-				<footer class="site-footer">
+			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
@@ -119,15 +145,15 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<h3 class="widget-title">Contact form</h3>
-								<form action="#" class="contact-form">
+								<form action="/" method="POST" class="contact-form" value="csrf_token()">
 									<div class="row">
-										<div class="col-md-6"><input type="text" placeholder="First name" required></div>
-										<div class="col-md-6"><input type="text" placeholder="Lastname " required></div>
-										<div class="col-md-12"><input type="text" placeholder="Email..." required></div>
-										<div class="col-md-12"><input type="text" placeholder="Subject..." required></div>
+										<div class="col-md-6"><input type="text" name="fname" placeholder="First name" required></div>
+										<div class="col-md-6"><input type="text" name="lname" placeholder="Lastname " required></div>
+										<div class="col-md-12"><input type="text" name="email" placeholder="Email..." required></div>
+										<div class="col-md-12"><input type="text" name="subject" placeholder="Subject..." required></div>
 									</div>
 									
-									<textarea name="" placeholder="Your message..." required></textarea>
+									<textarea name="message" placeholder="Your message..." required></textarea>
 									<div class="text-right"><input type="submit" value="Send message"></div>
 									
 								</form>
@@ -145,9 +171,9 @@
 		</div>
 		
 
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/app.js"></script>
+		<<script src="{{ URL::asset('js/jquery-1.11.1.min.js')}}"></script>
+		<script src="{{ URL::asset('js/plugins.js')}}"></script>
+		<script src="{{ URL::asset('js/app/app.js')}}"></script>
 		
 	</body>
 

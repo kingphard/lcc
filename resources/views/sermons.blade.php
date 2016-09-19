@@ -27,7 +27,7 @@
 			<header class="site-header">
 				<div class="container">
 					<a href="#" class="branding">
-						<img src="images/logo.png" alt="" class="logo">
+						<img src="images/logg.jpg" height="60" width="60" alt="" class="logo">
 						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
 
@@ -238,15 +238,15 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<h3 class="widget-title">Contact form</h3>
-								<form action="#" class="contact-form">
+								<form action="/" method="POST" class="contact-form" value="csrf_token()">
 									<div class="row">
-										<div class="col-md-6"><input type="text" placeholder="First name" required></div>
-										<div class="col-md-6"><input type="text" placeholder="Lastname " required></div>
-										<div class="col-md-12"><input type="text" placeholder="Email..." required></div>
-										<div class="col-md-12"><input type="text" placeholder="Subject..." required></div>
+										<div class="col-md-6"><input type="text" name="fname" placeholder="First name" required></div>
+										<div class="col-md-6"><input type="text" name="lname" placeholder="Lastname " required></div>
+										<div class="col-md-12"><input type="text" name="email" placeholder="Email..." required></div>
+										<div class="col-md-12"><input type="text" name="subject" placeholder="Subject..." required></div>
 									</div>
 									
-									<textarea name="" placeholder="Your message..." required></textarea>
+									<textarea name="message" placeholder="Your message..." required></textarea>
 									<div class="text-right"><input type="submit" value="Send message"></div>
 									
 								</form>
@@ -257,7 +257,6 @@
 					<p class="colophon">Copyright &copy; 2016 www.llc.org. All right reserved</p>
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
-
 			</a></div>
 
 		</div>

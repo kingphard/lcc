@@ -18,6 +18,7 @@
     <link href="{{ URL::asset('css/animate.css')}}" rel="stylesheet">
     <link href="{{ URL::asset('css/style.css')}}" rel="stylesheet">
     <link href="{{ URL::asset('font-awesome/css/font-awesome.css')}}" rel="stylesheet">
+    <link href="{{ URL::asset('dist/sweetalert.css')}}" rel="stylesheet">
     
 
     <!-- Scripts -->
@@ -115,6 +116,8 @@
     <script src="{{ URL::asset('js/plugins.js')}}"></script>
     <script src="{{ URL::asset('js/pace/pace.min.js')}}"></script>
     <script src="{{ URL::asset('js/inspinia.js')}}"></script>
+    <script src="{{ URL::asset('dist/sweetalert.min.js')}}"></script>
     <script src="{{ URL::asset('js/slimscroll/jquery.slimscroll.min.js')}}"></script>
+     
 </body>
 </html>

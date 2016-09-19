@@ -1209,7 +1209,8 @@ form input[type="submit"], form button, form input[type="reset"] {
         color: #a59e95; }
 
 .hero {
-  position: relative; }
+  position: relative; 
+  /**margin-right:50%;**/}
   .hero .slides {
     list-style: none;
     *zoom: 1; }
@@ -1221,10 +1222,11 @@ form input[type="submit"], form button, form input[type="reset"] {
       height: 0; }
     .hero .slides li {
       background-size: cover;
-      width: 100%;
-      margin-right: -100%;
+      width: 80%;
+      margin-right: 20%;
       float: left;
       min-height: 545px;
+
       padding: 150px 0; }
     .hero .slides .slide-content {
       text-align: center;

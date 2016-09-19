@@ -57,6 +57,10 @@ Route::get('/messages', function(){
 	return view('message');
 });
 
+Route::get('/about_gen', 'ImageController@indexgen');
+
+
+
 
 
 
