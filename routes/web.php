@@ -59,6 +59,8 @@ Route::get('/messages', function(){
 
 Route::get('/about_gen', 'ImageController@indexgen');
 
+Route::get('/test/{id}', 'ContactController@delete');
+
 
 
 
