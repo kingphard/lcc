@@ -146,15 +146,15 @@
 								<h2 class="section-title">Events / Associations </h2>
 								<ul class="event-list">
 									<li>
-										<a href="#">
+										<a href="events">
 											<h3 class="event-title">Covenant Sons Fellowship</h3><p>
 											
-												<span>( Every Friday of the month )</span>
+												<span>( Third Friday of the month )</span>
 										</p>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="events">
 											<h3 class="event-title">Covenant Daughters Fellowship</h3><p>
 											
 												<span>( First Wednesday of the month )</span>
@@ -164,19 +164,19 @@
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="events">
 											<h3 class="event-title">Youth Fellowship</h3><p>
 											
-												<span>( Every month ) </span>
+												<span>( Specific Saturdays ) </span>
 											</p>
 
 											
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="events">
 											<h3 class="event-title">Workers Meeting</h3><p>
-												<span>( Every Saturday of the month )</span>
+												<span>( First/Last Saturday of the month )</span>
 										</a>	</p>
 									</li>
 								</ul>
@@ -237,7 +237,8 @@
 									<li><i class="fa fa-map-marker"></i> 58, Ijebu Road Sabon Gari Fagge LGA, Kano State Nigeria</li>
 									<li><i class="fa fa-phone"></i> (+234) 8099833035</li>
 									<li><i class="fa fa-phone"></i> (+234) 8036790116</li>
-									<li><i class="fa fa-envelope"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-google-plus"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-facebook-square"></i> lcckanohq@gmail.com</li>
 								</ul>
 							</div>
 						</div>

@@ -78,7 +78,7 @@
   				<div class="panel panel-default">
     				<div class="panel-body">
     					<p style="text-shadow: 1px 1px #FF0000;"><br><br><br><br><br>
-					Apostle I.O Eruemulor is an Apostolic Prophet anointed to break the power of Saatan in the lives of people and move them by the power of the Holy spirit into their eathly and heavenly divine inheritance. this unique anointing on his life has made positive impact in the lives of so many. He is a destiny technocrat with strong drive to help people locate their places of fulfilment in life. He is the general superintedent of Love Crusade Chapel a.k.a (Consuming fire's camp). He is based in Kano from where he oversees other branches of the ministry. He is married to Pastor (Mrs) M.N Eruemulor who is also an anointed intercessor. The are blessed with three children: Davelyn Eruemulor, Emmanuel Eruemulor and David Eruemulor.
+					Apostle I.O Eruemulor is an Apostolic Prophet anointed to break the power of Satan in the lives of people and move them by the power of the Holy spirit into their eathly and heavenly divine inheritance. This unique anointing on his life has made positive impact in the lives of so many. He is a destiny technocrat with strong drive to help people locate their places of fulfilment in life. He is the general superintedent of Love Crusade Chapel a.k.a (Consuming fire's camp). He is based in Kano from where he oversees other branches of the ministry. He is married to Pastor (Mrs) M.N Eruemulor who is also an anointed intercessor. They are blessed with three children: Davelyn Eruemulor, Emmanuel Eruemulor and David Eruemulor.
 						</p>
     				
     				</div>
@@ -108,7 +108,8 @@
 									<li><i class="fa fa-map-marker"></i> 58, Ijebu Road Sabon Gari Fagge LGA, Kano State Nigeria</li>
 									<li><i class="fa fa-phone"></i> (+234) 8099833035</li>
 									<li><i class="fa fa-phone"></i> (+234) 8036790116</li>
-									<li><i class="fa fa-envelope"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-google-plus"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-facebook-square"></i> lcckanohq@gmail.com</li>
 								</ul>
 							</div>
 						</div>

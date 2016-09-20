@@ -57,7 +57,7 @@
 			<main class="main-content">
 
 				<div class="container">
-  				<h2><marquee>OUR MISSIONS INCLUDE</marquee></h2>
+  				<h1><strong><marquee>OUR MISSIONS INCLUDE</marquee></strong></h1>
   				<div class="panel panel-default">
     			<div class="panel-body">
     			<ul>
@@ -65,13 +65,13 @@
 				<li> Demonstrating the life of the kingdom to come</li>
 				</ul>
 				<br>
-				<h2><marquee>OUR STAND</marquee></h2>
+				<h1><strong><marquee direction="right">OUR STAND</marquee></strong></h1>
 				<p><strong>FRIENDSHIP, COURTSHIP AND MARRIAGE</strong></p>
-				<p> Many christians do not have an accurate bibilical perspective of the above mentioned factors.. The definition of the above are as follows:</p>
-				<p><strong>Friendsihp:</strong> christian friendship is recognised as the unity between believers in christ through faith. It also expresses unity in loving, kind, holy and God pleasing relatioship with one another. we will grow you up on what christian friend is? what it means to have brother sister friendship in a christian community as we work in love</p>
-				<p><strong>Courship: </strong> it is a unique transitional period in life when one moves from friendship to marriage. so in this case we will discuss how to conduct ourselves as christians in finding a spouse and getting married. We want to consider how a courple is to delight themselves in God, while pursuing marriage</p>
+				<p> Many christians do not have an accurate bibilical perspective of the above mentioned factors. The definition of the above are as follows:</p>
+				<p><strong>Friendsihp:</strong> Christian friendship is recognised as the unity between believers in christ through faith. It also expresses unity in loving, kind, holy and God pleasing relatioship with one another. We will grow you up on what christian friend is as well as what it means to have brother sister friendship in a christian community as we work in love</p>
+				<p><strong>Courship: </strong> It is a unique transitional period in life when one moves from friendship to marriage. so in this case we will discuss how to conduct ourselves as christians in finding a spouse and getting married. We want to consider how a couple is to delight themselves in God, while pursuing marriage</p>
 
-				<p><strong> Marriage:</strong> As a blessed institution ordained by God, the present generations definition point is negating the biblical definition. It is therefore for christians to understnad how God defines it. As it is unique among earthly relationship, significant in the lives of husbands and wives and especially the relationship between christ and his churdh.</p>
+				<p><strong> Marriage:</strong> As a blessed institution ordained by God, the present generations definition point is negating the biblical definition. It is therefore for christians to understnad how God defines it. As it is unique among earthly relationship, significant in the lives of husbands and wives and especially the relationship between christ and his church.</p>
     				
   				</div>
 				</div>
@@ -104,7 +104,8 @@
 									<li><i class="fa fa-map-marker"></i> 58, Ijebu Road Sabon Gari Fagge LGA, Kano State Nigeria</li>
 									<li><i class="fa fa-phone"></i> (+234) 8099833035</li>
 									<li><i class="fa fa-phone"></i> (+234) 8036790116</li>
-									<li><i class="fa fa-envelope"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-google-plus"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-facebook-square"></i> lcckanohq@gmail.com</li>
 								</ul>
 							</div>
 						</div>

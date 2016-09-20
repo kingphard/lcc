@@ -61,26 +61,25 @@
 								<h2 class="section-title">Events</h2>
 								<ul class="event-list large">
 									<li>
-										<h3 class="event-title">covenant sons fellowship</h3>
+										<h3 class="event-title"><strong>covenant sons fellowship</strong></h3>
 										<span class="event-meta">
 											<span><i class="fa fa-calendar"></i><?php 
-												$third_tuesday = new DateTime('third Tuesday of this month');
+												$third_friday = new DateTime('third Friday of this month');
 
 													// if date has passed, get next month's third tuesday
-													if ($third_tuesday < new DateTime()) {
-    												$third_tuesday->modify('third tuesday of next month');
+													if ($third_friday < new DateTime()) {
+    												$third_friday->modify('third friday of next month');
 														}
 
-													echo $third_tuesday->format('l F d, Y');
+													echo $third_friday->format('l F d, Y');
 											 ?></span>
 											<span><i class="fa fa-map-marker"></i> Church Premises</span>
 										</span>
 										<p>Join us for fellowship, prayer and devotion as we gather every third friday of the month..</p>
 										<p>For more information/enquiry, please click the button bellow to send us message</p>
-										<a href="#" class="button secondary">Ask a question</a>
 									</li>
 									<li>
-										<h3 class="event-title">Covenant daughters fellowship</h3>
+										<h3 class="event-title"><strong>Covenant daughters fellowship</strong></h3>
 										<span class="event-meta">
 											<span><i class="fa fa-calendar"></i>
 												<?php 
@@ -99,20 +98,18 @@
 										</span>
 										<p>God is our source of strength, we gather to delibrate way forward in the vineyard to strenghten and encourage members who want to serve the lord in the christian faith</p>
 										<p>For more information/enquiry, please click the button bellow to send us message</p>
-										<a href="#" class="button secondary">Ask a question</a>
 									</li>
 									<li>
-										<h3 class="event-title">Youth Fellowship</h3>
+										<h3 class="event-title"><strong>Youth Fellowship</strong></h3>
 										<span class="event-meta">
 											<span><i class="fa fa-calendar"></i>Specific Saturday of the month</span>
 											<span><i class="fa fa-map-marker"></i> Church Premises</span>
 										</span>
 										<p>The youth are the strength of the church. Our mission is to supplement the parents work of equipping the youth in christ through the teaching of the word, worship, discipline, fellowship and prayer. So that they may conduct their lives in a manner worthy of the gospel of christ</p>
 										<p>For more information/enquiry, please click the button bellow to send us message</p>
-										<a href="#" class="button secondary">Ask a question</a>
 									</li>
 									<li>
-										<h3 class="event-title">Workers Meeting</h3>
+										<h3 class="event-title"><strong>Workers Meeting</strong></h3>
 										<span class="event-meta">
 											<span><i class="fa fa-calendar"></i>
 												<?php 
@@ -130,7 +127,6 @@
 										</span>
 										<p>We labour for our God in the kingdom. These comprises of different groups like: Prayer group, Choir, Usher, Telecom Department, Tech Department, Security Department e.t.c</p>
 										<p>For more information/enquiry, please click the button bellow to send us message</p>
-										<a href="#" class="button secondary">Ask a question</a>
 									</li>
 									
 								</ul>
@@ -182,7 +178,8 @@
 									<li><i class="fa fa-map-marker"></i> 58, Ijebu Road Sabon Gari Fagge LGA, Kano State Nigeria</li>
 									<li><i class="fa fa-phone"></i> (+234) 8099833035</li>
 									<li><i class="fa fa-phone"></i> (+234) 8036790116</li>
-									<li><i class="fa fa-envelope"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-google-plus"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-facebook-square"></i> lcckanohq@gmail.com</li>
 								</ul>
 							</div>
 						</div>
