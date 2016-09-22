@@ -284,7 +284,7 @@
 									</div>
 									
 									<textarea name="message" placeholder="Your message..." required></textarea>
-									<div class="text-right"><input type="submit" value="Send message"></div>
+									<div class="text-right"><input type="submit" onclick="sentMessage(this)" value="Send message"></div>
 									
 								</form>
 							</div>
@@ -302,6 +302,25 @@
 		<script src="{{ URL::asset('js/jquery-1.11.1.min.js')}}"></script>
 		<script src="{{ URL::asset('js/plugins.js')}}"></script>
 		<script src="{{ URL::asset('js/app/app.js')}}"></script>
+		<script>
+
+		function sentMessage(del){
+            var url = $(del).attr('message-id');
+            url = "/"+url;
+            $.ajax({
+                url:url,
+                dataType: "JSON",
+                method: "GET",
+                success:function(data){
+                   if(data['status'].match(/success/i)){
+                    
+                        swal("Message Sent"); 
+                   }
+                }
+
+            });
+        }
+		</script>
 		
 	</body>
 

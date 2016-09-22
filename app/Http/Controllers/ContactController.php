@@ -26,7 +26,7 @@ class ContactController extends Controller
         $contact->message = $message;
         $saved=$contact->save();
         if($saved){
-            return "Message Sent";
+            return response()->json(["Message Sent"]);
         }
         else
         {
@@ -39,7 +39,7 @@ class ContactController extends Controller
         $readmessage = Contact::all();
         if($readmessage)
         {
-            return "$readmessage";
+            return view('message')-> with('readmessage',$readmessage);
         }
         else
         {
@@ -51,11 +51,11 @@ class ContactController extends Controller
         $readSpecialMsg = Contact::find($id);
         if($readSpecialMsg)
         {
-            return "$readSpecialMsg";
+            return response()->json(["status"=>"Success","message"=>$readSpecialMsg]);
         }
         else
         {
-            return "cannot find message";
+            return response()->json(["status"=>"Error: unable to find message", "message"=>$readSpecialMsg]);
         }
     }
     public function edit(Request $request, $id)
@@ -87,11 +87,13 @@ class ContactController extends Controller
         $deletedmsg = $messageToDelete->delete();
         if($deletedmsg)
         {
-            return "message deleted";
+            return response()->json(["status"=>"Success", "message"=>"Message Deleted"]);
         }
         else
         {
             return "message not deleted";
         }
     }
+
+
 }

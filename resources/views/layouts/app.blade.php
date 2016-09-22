@@ -19,7 +19,11 @@
     <link href="{{ URL::asset('css/style.css')}}" rel="stylesheet">
     <link href="{{ URL::asset('font-awesome/css/font-awesome.css')}}" rel="stylesheet">
     <link href="{{ URL::asset('dist/sweetalert.css')}}" rel="stylesheet">
-    
+    <style>
+    footer{
+        bottom:0 !important;
+    }
+    </style>
 
     <!-- Scripts -->
     <script>
@@ -104,6 +108,9 @@
             </div>
         </div>
     </nav>
+    <footer>
+        <span>Copyright &copy; 2016 www.lcc.org</span>
+    </footer>
 
     @yield('content')
 
@@ -118,6 +125,47 @@
     <script src="{{ URL::asset('js/inspinia.js')}}"></script>
     <script src="{{ URL::asset('dist/sweetalert.min.js')}}"></script>
     <script src="{{ URL::asset('js/slimscroll/jquery.slimscroll.min.js')}}"></script>
+    <script type="text/javascript">
+        function showMessage(btn){
+            var url = $(btn).attr('message-id');
+            url = "/messages/"+url;
+            $.ajax({
+                url:url,
+                dataType: "JSON",
+                method: "GET",
+                success: function(data){
+                    if(data['status'].match(/success/i)){
+                       // console.log(data['message']['message']);
+                        //console.log(data['message']['subject']);
+                         $("#message-subject").html(data['message']['subject']);
+                        $("#message-body").html(data['message']['message']);
+                        $("#message-sender-fname").html(data['message']['fname']);
+                        $("#message-sender-lname").html(data['message']['lname']);
+                        $("#message-sender-email").html(data['message']['email']);
+
+                        $("#modalCheckMsg").modal();
+                    }
+
+                }
+            });
+        }
+        function deleteMessage(del){
+            var url = $(del).attr('message-id');
+            url = "messages/delete/"+url;
+            $.ajax({
+                url:url,
+                dataType: "JSON",
+                method: "GET",
+                success:function(data){
+                   if(data['status'].match(/success/i)){
+                    
+                        swal("Message Deleted"); 
+                   }
+                }
+
+            });
+        }
+    </script>
      
 </body>
 </html>

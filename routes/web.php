@@ -27,7 +27,7 @@ Route::get('/video', 'VideoController@index');
 
 Route::post('/video', 'VideoController@store');
 
-Route::post('/', 'ContactController@store');
+Route::post('/', 'ContactController@create');
 
 Route::get('/', 'ImageController@index');
 
@@ -53,13 +53,17 @@ Route::get('/about_gen', function(){
 	return view('about_gen');
 });
 
-Route::get('/messages', function(){
-	return view('message');
-});
+//Route::get('/messages', function(){
+//	return view('message');
+//});
 
 Route::get('/about_gen', 'ImageController@indexgen');
 
-Route::get('/test/{id}', 'ContactController@readOne');
+Route::get('/messages', 'ContactController@readAll');
+
+Route::get('/messages/{id}', 'ContactController@readOne');
+
+Route::get('/messages/delete/{id}', 'ContactController@delete');
 
 
 
