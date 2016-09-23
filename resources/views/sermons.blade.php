@@ -60,9 +60,12 @@
 						<div class="row">
 							<div class="content col-md-8">
 								<h2 class="section-title">sermons</h2>
+								@foreach($readVideo as $read_video)
 								<ul class="seremon-list large">
+								
 									<li>
-										<img src="images/thumb-1-120.png" alt="">
+										<a href="#" data-toggle="modal" data-target="#modalSermon">
+										<img src="{{..uploads/videos/{{$read_video -> vid_file }}" alt=""></a>
 										<div class="seremon-detail">
 											<h3 class="seremon-title"><a href="#">TITLE OF THE SERMON</a></h3>
 											<div class="seremon-meta">
@@ -72,40 +75,8 @@
 											<p>Short Detail about the sermon.</p>
 										</div>
 									</li>
-									<li>
-										<img src="images/thumb-2-120.jpg" alt="">
-										<div class="seremon-detail">
-											<h3 class="seremon-title"><a href="#">Trusting in jesus and god</a></h3>
-											<div class="seremon-meta">
-												<div class="pastor"><i class="fa fa-user"></i> David Clark</div>
-												<div class="date"><i class="fa fa-calendar"></i> 18 mar 2014</div>
-											</div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dignissimos corporis quidem at nobis impedit perspiciatis, accusantium qui natus amet sapiente voluptate doloribus laboriosam officia deserunt possimus cumque inventore. Ipsum.</p>
-										</div>
-									</li>
-									<li>
-										<img src="images/thumb-3-120.jpg" alt="">
-										<div class="seremon-detail">
-											<h3 class="seremon-title"><a href="#">Love your kids</a></h3>
-											<div class="seremon-meta">
-												<div class="pastor"><i class="fa fa-user"></i> anthony roberts</div>
-												<div class="date"><i class="fa fa-calendar"></i> 18 mar 2014</div>
-											</div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nisi rem est amet, ducimus, aut, atque error accusantium facilis ab adipisci! Cumque, corrupti sapiente dolores saepe adipisci dignissimos quod unde.</p>
-										</div>
-									</li>
-									<li>
-										<img src="images/thumb-2-120.jpg" alt="">
-										<div class="seremon-detail">
-											<h3 class="seremon-title"><a href="#">Trusting in jesus and god</a></h3>
-											<div class="seremon-meta">
-												<div class="pastor"><i class="fa fa-user"></i> David Clark</div>
-												<div class="date"><i class="fa fa-calendar"></i> 18 mar 2014</div>
-											</div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dignissimos corporis quidem at nobis impedit perspiciatis, accusantium qui natus amet sapiente voluptate doloribus laboriosam officia deserunt possimus cumque inventore. Ipsum.</p>
-										</div>
-									</li>
 								</ul>
+								@endforeach
 							</div>
 							<div class="sidebar col-md-3 col-md-offset-1">
 
@@ -192,12 +163,31 @@
 						</div>
 					</div> <!-- .row -->
 
-					<p class="colophon">Copyright &copy; 2016 www.llc.org. All right reserved</p>
+					<p class="colophon">Copyright &copy; 2016 www.lcc.org. All right reserved</p>
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
 			</a></div>
 
 		</div>
+
+		<!-- video display modal -->
+		<div id="modalSermon" class="modal fade" role="dialog">
+    	<div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align-last: center">Register</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    	</div>
+	</div>
 		
 
 		<script src="js/jquery-1.11.1.min.js"></script>

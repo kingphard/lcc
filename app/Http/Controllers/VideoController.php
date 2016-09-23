@@ -49,7 +49,19 @@ class VideoController extends Controller
         $video->preacher = $preacher;
         $video->save();
        
-    return redirect('video')->with('status', 'video uploaded');
+    return redirect('video')->with('status', 'data uploaded');
+    }
+    public function readAll()
+    {
+        $readVideo = Video::all();
+        if($readVideo){
+
+        return view('sermons')-> with('readVideo', $readVideo);
+        }
+        else
+        {
+            return "file not seen"; 
+        }
     }
 
 }

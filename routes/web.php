@@ -33,9 +33,7 @@ Route::get('/', 'ImageController@index');
 
 Route::get('/events', 'ImageController@index1');
 
-Route::get('/sermons', function(){
-	return view('sermons');
-});
+
 
 Route::get('/events', function(){
 	return view('events');
@@ -62,6 +60,8 @@ Route::get('/about_gen', 'ImageController@indexgen');
 Route::get('/messages', 'ContactController@readAll');
 
 Route::get('/messages/{id}', 'ContactController@readOne');
+
+Route::get('/sermons', 'VideoController@readAll');
 
 Route::get('/messages/delete/{id}', 'ContactController@delete');
 

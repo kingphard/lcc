@@ -232,7 +232,7 @@
 						</div>
 					</div> <!-- .row -->
 
-					<p class="colophon">Copyright &copy; 2016 www.llc.org. All right reserved</p>
+					<p class="colophon">Copyright &copy; 2016 www.lcc.org. All right reserved</p>
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
 			</a></div>
