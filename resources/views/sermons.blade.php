@@ -13,6 +13,7 @@
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		
 		<!--[if lt IE 9]-->
 		<script src="js/ie-support/html5.js"></script>
@@ -63,16 +64,16 @@
 								@foreach($readVideo as $read_video)
 								<ul class="seremon-list large">
 								
-									<li>
-										<a href="#" data-toggle="modal" data-target="#modalSermon">
-										<img src="{{..uploads/videos/{{$read_video -> vid_file }}" alt=""></a>
+									<li id="close_frame">
+										
+										<img id="{{$read_video -> id}}" onclick="open_modal();" class="modal_caller" src="..uploads/videos/{{ $read_video -> vid_file }}" width="100" height="80" alt="">
 										<div class="seremon-detail">
-											<h3 class="seremon-title"><a href="#">TITLE OF THE SERMON</a></h3>
+											<h3 class="seremon-title">{{ $read_video -> title }}</h3>
 											<div class="seremon-meta">
-												<div class="pastor"><i class="fa fa-user"></i> Preacher Name</div>
-												<div class="date"><i class="fa fa-calendar"></i> 18 mar 2014</div>
+												<div class="pastor" style="font-size:15 !important;" ><i class="fa fa-user"></i>{{ $read_video -> preacher }}</div>
+												
 											</div>
-											<p>Short Detail about the sermon.</p>
+											<p>{{ $read_video -> details }}</p>
 										</div>
 									</li>
 								</ul>
@@ -162,38 +163,52 @@
 							</div>
 						</div>
 					</div> <!-- .row -->
+					<div id="divd">
+					</div>
 
 					<p class="colophon">Copyright &copy; 2016 www.lcc.org. All right reserved</p>
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
 			</a></div>
-
 		</div>
-
-		<!-- video display modal -->
-		<div id="modalSermon" class="modal fade" role="dialog">
-    	<div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title" style="text-align-last: center">Register</h4>
-            </div>
-            <div class="modal-body">
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    	</div>
-	</div>
-		
-
-		<script src="js/jquery-1.11.1.min.js"></script>
+		<div class="modal fade" id="img_modal">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		        
+		      </div>
+		      <div class="modal-body">
+		        <p>
+		        	<iframe style="width:100%; min-height:250px" src="https://www.youtube.com/embed/ZN52KHW25Yg" frameborder="0" allowfullscreen></iframe>
+		        </p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" id="closemodal" data-dismiss="modal">Close</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+  		<script src="js/jquery-2.1.1.js"></script>
+  		<script src="js/bootstrap.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
 		
+		<script>
+		$(document).ready(function(){
+			$('#img_modal').on('hidden.bs.modal', function (e) {
+			  //alert("Modal window has been completely closed.");
+			});
+			
+
+		});
+		function open_modal(){
+			//alert('modal');
+			$('#img_modal').modal();
+		}	
+		</script>
 	</body>
 
 </html>

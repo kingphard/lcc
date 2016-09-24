@@ -1414,7 +1414,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 0.8571428571em;
     color: #a59e95;
     font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
-    text-transform: lowercase; }
+    text-transform: uppercase; }
     .seremon-list .seremon-meta .pastor {
       margin-bottom: 5px; }
     .seremon-list .seremon-meta .fa {

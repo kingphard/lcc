@@ -25,6 +25,7 @@ class VideoController extends Controller
         $title = $request->input('name');
         $details = $request->input("details");
         $preacher = $request->input("preacher");
+        $link = $request->input("link");
         
 
         if($request->hasFile('vid_file'))
@@ -47,6 +48,7 @@ class VideoController extends Controller
         $video->title =  $title;
         $video->details =  $details;
         $video->preacher = $preacher;
+        $video->link =  $link;
         $video->save();
        
     return redirect('video')->with('status', 'data uploaded');
@@ -55,7 +57,7 @@ class VideoController extends Controller
     {
         $readVideo = Video::all();
         if($readVideo){
-
+        //return response()->json(["status"=>"Success","message"=>$readSpecialMsg]);
         return view('sermons')-> with('readVideo', $readVideo);
         }
         else

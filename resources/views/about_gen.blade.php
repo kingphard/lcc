@@ -40,7 +40,7 @@
 							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
 							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
 							<li class="menu-item current-menu-item"><a href="#">GEN.SUPERINTENDENT<small>About the Gen.Superintendent</small></a></li>
-							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
+							
 						</ul>
 					</div>
 
