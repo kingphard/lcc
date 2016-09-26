@@ -84,6 +84,7 @@
 				</div>
 			</main> <!-- .main-content -->
 
+		<div id="cont"><a name="cont">
 			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
@@ -104,7 +105,7 @@
 									<li><i class="fa fa-phone"></i> (+234) 8099833035</li>
 									<li><i class="fa fa-phone"></i> (+234) 8036790116</li>
 									<li><i class="fa fa-google-plus"></i> lcckanohq@gmail.com</li>
-									<li><i class="fa fa-facebook-square"></i><a href="www.facebook.com/lovecrusade"> www.facebook.com/lovecrusadechapel</a></li>
+									<li><i class="fa fa-facebook-square"></i> www.facebook.com@Love Crusade Church KANO</li>
 								</ul>
 							</div>
 						</div>
@@ -141,29 +142,29 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<h3 class="widget-title">Contact form</h3>
-								<form action="#" class="contact-form">
+								<form action="/" method="POST" class="contact-form" value="csrf_token()">
 									<div class="row">
-										<div class="col-md-6"><input type="text" placeholder="First name"></div>
-										<div class="col-md-6"><input type="text" placeholder="Lastname "></div>
-										<div class="col-md-12"><input type="text" placeholder="Email..."></div>
+										<div class="col-md-6"><input type="text" name="fname" placeholder="First name" required></div>
+										<div class="col-md-6"><input type="text" name="lname" placeholder="Lastname " required></div>
+										<div class="col-md-12"><input type="text" name="email" placeholder="Email..." required></div>
+										<div class="col-md-12"><input type="text" name="subject" placeholder="Subject..." required></div>
 									</div>
 									
-									<textarea name="" placeholder="Your message..."></textarea>
-									<div class="text-right"><input type="submit" value="Send message"></div>
+									<textarea name="message" placeholder="Your message..." required></textarea>
+									<div class="text-right"><input type="submit" onclick="sentMessage(this)" value="Send message"></div>
 									
 								</form>
 							</div>
 						</div>
 					</div> <!-- .row -->
 
-					<p class="colophon">Copyright &copy; 2016 www.llc.org. All right reserved</p>
+					<p class="colophon">Copyright &copy; 2016 www.lcc.org. All right reserved</p>
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
-
-
+			</a></div>
+			
 		</div>
 
-		</div>
 		
 
 		<script src="js/jquery-1.11.1.min.js"></script>
