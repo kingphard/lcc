@@ -67,7 +67,7 @@
 								
 									<li id="close_frame">
 										
-										<img video-id="{{$read_video -> id}}" onclick="showVideo(this)" class="modal_caller" src="..uploads/videos/{{ $read_video -> vid_file }}" width="100" height="80" alt="">
+										<img video-id="{{$read_video -> id}}" onclick="showVideo(this)" class="modal_caller" src="..uploads/videos/{{ $read_video -> vid_file }}" width="100" height="100" alt="">
 										<div class="seremon-detail">
 											<h3 class="seremon-title">{{ $read_video -> title }}</h3>
 											<div class="seremon-meta">
@@ -172,26 +172,21 @@
 			</footer> <!-- .site-footer -->
 			</a></div>
 		</div>
-		<div class="modal fade" id="img_modal">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		        <div id="modal-title"></div>
-		      </div>
-		      <div class="modal-body">
-		        <p>
-		        	<iframe style="width:100%; min-height:250px" src="https://www.youtube.com/embed/ZN52KHW25Yg" frameborder="0" allowfullscreen></iframe>
-		        </p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" id="closemodal" data-dismiss="modal">Close</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+		
+		<div id="img_modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <iframe id="video-frame" video-id="{{$read_video -> id }}" src="" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
   		<script src="js/jquery-2.1.1.js"></script>
   		<script src="js/bootstrap.min.js"></script>
 		<script src="js/plugins.js"></script>
@@ -199,12 +194,22 @@
 		
 		<script>
 		$(document).ready(function(){
+			var url = $("#video-frame").attr('src');
+
+			/* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    		$("#img_modal").on('hide.bs.modal', function(){
+        	$("#video-frame").attr('src', '');
+   			 });
+
 			$('#img_modal').on('hidden.bs.modal', function (e) {
-			  //alert("Modal window has been completely closed.");
+			   $("#video-frame").attr('src', url);
 			});
 			
 
 		});
+
+
 		function showVideo(btn){
             var url = $(btn).attr('video-id');
             url = "/sermons/"+url;
@@ -214,10 +219,10 @@
                 method: "GET",
                 success: function(data){
                     if(data['status'].match(/success/i)){
-                        console.log(data['video']['title']);
-                        console.log(data['video']['vid_file']);
-                         $("#modal-title").html(data['video']['title']);
-                        $(".modal-body").html(data['video']['vid_file']);
+                        //console.log(data['video']['title']);
+                        console.log(data['link']);
+                         $("#modal-title").html(data['title']);
+                         $("#video-frame").attr('src', data['link']);
                         $("#img_modal").modal();
                     }
 

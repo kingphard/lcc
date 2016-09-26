@@ -67,6 +67,8 @@ Route::get('/sermons', 'VideoController@readAll');
 
 Route::get('/messages/delete/{id}', 'ContactController@delete');
 
+Route::get('/sermons/{id}', 'VideoController@readOne');
+
 
 
 

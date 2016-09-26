@@ -188,8 +188,9 @@
 							<div class="col-md-6">
 								<h2 class="section-title">BOOKS</h2>
 								<ul class="seremon-list">
-								
+								<?php $countBook =0; ?>
 								@foreach($img_cat as $img2)
+										<?php if ($countBook == 3) break;?>
 										@if($img2->categories_id==3)
 										
 										
@@ -206,6 +207,7 @@
 										</div>
 										
 									</li>
+									<?php $countBook++;?>
 									@endif
 										@endforeach
 									

@@ -10,6 +10,7 @@
 		<!-- Loading third party fonts -->
 		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="{{ URL::asset('dist/sweetalert.css')}}" rel="stylesheet">
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
@@ -55,20 +56,15 @@
 					<div class="container">
 						<div class="row">
 							<div class="content col-md-8">
-								<h2 class="section-title">sermons</h2>
+								<h4 class="section-title">Click to Download Books</h4>
 								@foreach( $img_cate as $book_img)
 								@if($book_img->categories_id==3)
 								<ul class="seremon-list large">
-								
 									<li id="close_frame">
-										
-										<img id="..uploads/{{ $book_img -> file }} " class="modal_caller" src="" width="100" height="80" alt="">
+										<a href="#" onclick="swal('Sorry Download Not Yet available..')"> <img src="..uploads/{{ $book_img -> file }}" class="modal_caller" src="" width="100" height="100" alt=""></a>
 										<div class="seremon-detail">
-											<h3 class="seremon-title"></h3>
-											<div class="seremon-meta">
-												<div class="pastor" style="font-size:15 !important;" ><i class="fa fa-user"></i></div>
-												
-											</div>
+											<h3><strong class="seremon-title">{{$book_img -> title }}</strong></h3>
+											<p><h4><strong>{{$book_img -> description }}</strong></h4></p>
 										</div>
 									</li>
 								</ul>
@@ -80,8 +76,6 @@
 
 								<div class="widget">
 									<h3 class="widget-title">DO YOU KNOW? </h3>
-									  :
-
 									<p><strong>Timothy 3:16 </strong>All scripture [is] given by inspiration of God, and [is] profitable for doctrine, for reproof, for correction, for instruction in righteousness..</p>
 								</div>
 							</div>
@@ -175,6 +169,7 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
+		<script src="{{ URL::asset('dist/sweetalert.min.js')}}"></script>
 		
 	</body>
 
