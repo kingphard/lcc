@@ -19,7 +19,7 @@ class ImageController extends Controller
     public function index1(){
 
     	$img_cate = image::all();
-     	return view('events')->with('img_cate', $img_cate);
+     	return view('books')->with('img_cate', $img_cate);
     }
     public function indexgen()
     {

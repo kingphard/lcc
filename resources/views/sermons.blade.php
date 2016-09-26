@@ -12,8 +12,9 @@
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 		<!-- Loading main css file -->
-		<link rel="stylesheet" href="style.css">
+		
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
 		
 		<!--[if lt IE 9]-->
 		<script src="js/ie-support/html5.js"></script>
@@ -28,7 +29,7 @@
 			<header class="site-header">
 				<div class="container">
 					<a href="#" class="branding">
-						<img src="images/logg.jpg" height="60" width="60" alt="" class="logo">
+						<img src="images/MYLOGO.png" height="80" width="80" alt="" class="logo">
 						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
 
@@ -66,7 +67,7 @@
 								
 									<li id="close_frame">
 										
-										<img id="{{$read_video -> id}}" onclick="open_modal();" class="modal_caller" src="..uploads/videos/{{ $read_video -> vid_file }}" width="100" height="80" alt="">
+										<img video-id="{{$read_video -> id}}" onclick="showVideo(this)" class="modal_caller" src="..uploads/videos/{{ $read_video -> vid_file }}" width="100" height="80" alt="">
 										<div class="seremon-detail">
 											<h3 class="seremon-title">{{ $read_video -> title }}</h3>
 											<div class="seremon-meta">
@@ -111,7 +112,7 @@
 									<li><i class="fa fa-phone"></i> (+234) 8099833035</li>
 									<li><i class="fa fa-phone"></i> (+234) 8036790116</li>
 									<li><i class="fa fa-google-plus"></i> lcckanohq@gmail.com</li>
-									<li><i class="fa fa-facebook-square"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-facebook-square"></i>www.facebook.com@Love Crusade Church KANO</li>
 								</ul>
 							</div>
 						</div>
@@ -178,7 +179,7 @@
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
-		        
+		        <div id="modal-title"></div>
 		      </div>
 		      <div class="modal-body">
 		        <p>
@@ -204,10 +205,27 @@
 			
 
 		});
-		function open_modal(){
-			//alert('modal');
-			$('#img_modal').modal();
-		}	
+		function showVideo(btn){
+            var url = $(btn).attr('video-id');
+            url = "/sermons/"+url;
+            $.ajax({
+                url:url,
+                dataType: "JSON",
+                method: "GET",
+                success: function(data){
+                    if(data['status'].match(/success/i)){
+                        console.log(data['video']['title']);
+                        console.log(data['video']['vid_file']);
+                         $("#modal-title").html(data['video']['title']);
+                        $(".modal-body").html(data['video']['vid_file']);
+                        $("#img_modal").modal();
+                    }
+
+                }
+            });
+        }
+			//$('#img_modal').modal();
+		
 		</script>
 	</body>
 

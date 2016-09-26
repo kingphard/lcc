@@ -65,5 +65,17 @@ class VideoController extends Controller
             return "file not seen"; 
         }
     }
+    public function readOne($id)
+    {
+        $readOneVideo = Video::find($id);
+        if ($readOneVideo)
+        {
+            return response()->json(["status"=>"Success", "video"=>$readOneVideo]);
+        }
+        else
+        {
+            return response()->json(["status"=>"Error..Unable to find video", "video"=>$readOneVideo]);
+        }
+    }
 
 }

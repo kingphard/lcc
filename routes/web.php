@@ -31,7 +31,9 @@ Route::post('/', 'ContactController@create');
 
 Route::get('/', 'ImageController@index');
 
-Route::get('/events', 'ImageController@index1');
+Route::get('/books', 'ImageController@index1');
+
+//Route::get('/events', 'ImageController@index1');
 
 
 

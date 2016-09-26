@@ -27,7 +27,7 @@
 			<header class="site-header">
 				<div class="container">
 					<a href="#" class="branding">
-						<img src="images/logg.jpg" height="60" width="60" alt="" class="logo">
+						<img src="images/MYLOGO.png" height="80" width="80" alt="" class="logo">
 						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
 					@if(session('status'))
@@ -210,7 +210,9 @@
 										@endforeach
 									
 								</ul>
-
+								<div class="text-left">
+									<a href="books" class="button">See all Books</a>
+								</div>
 								
 							</div>
 						</div> <!-- .row -->
@@ -238,7 +240,7 @@
 									<li><i class="fa fa-phone"></i> (+234) 8099833035</li>
 									<li><i class="fa fa-phone"></i> (+234) 8036790116</li>
 									<li><i class="fa fa-google-plus"></i> lcckanohq@gmail.com</li>
-									<li><i class="fa fa-facebook-square"></i> lcckanohq@gmail.com</li>
+									<li><i class="fa fa-facebook-square"></i> www.facebook.com@Love Crusade Church KANO</li>
 								</ul>
 							</div>
 						</div>

@@ -27,7 +27,7 @@
 			<header class="site-header">
 				<div class="container">
 					<a href="#" class="branding">
-						<img src="images/logo.png" alt="" class="logo">
+						<img src="images/MYLOGO.png"  width="80" height="80" alt="" class="logo">
 						<h1 class="site-title">Love Crusade Chapel Kano</h1>
 					</a>
 
@@ -35,11 +35,7 @@
 						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 						<ul class="menu">
 							<li class="menu-item"><a href="/">Homepage <small>Welcome</small></a></li>
-							<li class="menu-item "><a href="sermons">Sermons<small>Listen to our Godly sermons</small></a></li>
-							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
-							<li class="menu-item"><a href="mission">Mission <small>View our mission</small></a></li>
-							<li class="menu-item"><a href="about_gen">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
-							<li class="menu-item current-menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
+							<li class="menu-item"><a href="#">Books <small>View Our Books</small></a></li>							
 						</ul>
 					</div>
 
@@ -55,7 +51,43 @@
 			</div>
 
 			<main class="main-content">
-				
+				<div class="fullwidth-block">
+					<div class="container">
+						<div class="row">
+							<div class="content col-md-8">
+								<h2 class="section-title">sermons</h2>
+								@foreach( $img_cate as $book_img)
+								@if($book_img->categories_id==3)
+								<ul class="seremon-list large">
+								
+									<li id="close_frame">
+										
+										<img id="..uploads/{{ $book_img -> file }} " class="modal_caller" src="" width="100" height="80" alt="">
+										<div class="seremon-detail">
+											<h3 class="seremon-title"></h3>
+											<div class="seremon-meta">
+												<div class="pastor" style="font-size:15 !important;" ><i class="fa fa-user"></i></div>
+												
+											</div>
+										</div>
+									</li>
+								</ul>
+								@endif
+								@endforeach
+								
+							</div>
+							<div class="sidebar col-md-3 col-md-offset-1">
+
+								<div class="widget">
+									<h3 class="widget-title">DO YOU KNOW? </h3>
+									  :
+
+									<p><strong>Timothy 3:16 </strong>All scripture [is] given by inspiration of God, and [is] profitable for doctrine, for reproof, for correction, for instruction in righteousness..</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</main> <!-- .main-content -->
 
 			<footer class="site-footer">
