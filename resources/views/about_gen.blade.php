@@ -124,7 +124,7 @@
 									<li>2nd Service : 9 a.m - 11 a.m</li>
 								</ul>
 								<ul class="bullet">
-									<li>Tuesday Bible study | Deliverance Service</a></li> 	
+									<li>Tuesday Bible study | Deliverance Service</li> 	
 								</ul>
 								<ul class="address">
 									<li>Service : 12:00 pm noon</li>
