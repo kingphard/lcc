@@ -13,6 +13,7 @@
 
 		<!-- Loading main css file -->
 		<link href="{{ URL::asset('style.css')}}" rel="stylesheet">
+		<link href="{{ URL::asset('dist/sweetalert.css')}}" rel="stylesheet">
 		
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
@@ -73,9 +74,10 @@
 			<main class="main-content">
 				<div class="fullwidth-block">
 					<div class="container">
-						<h2 class="section-title">GALLERY</h2>
+						<h2 class="section-title"><center><strong>GALLERY</strong></center></h2>
 						<div class="row">
-							<div class="col-md-3 col-sm-8">
+						<div class="col-md-2 col-sm-5"></div>
+							<div class="col-md-3 col-sm-5">
 								@foreach($img_cat as $img1)
 									@if($img1 -> categories_id == 4)
 								<div class="news">
@@ -86,41 +88,30 @@
 								@endif
 								@endforeach
 							</div>
-							<div class="col-md-3 col-sm-8">
+							<div class="col-md-3 col-sm-5">
+							<?php $count0 = 0;?>
 								@foreach($img_cat as $img1)
+								<?php if($count0==1) break;?>
 									@if($img1 -> categories_id == 5)
 								<div class="news">
-									<img class="news-image" src="..uploads/{{ $img1->file }}" style="max-height: 250px"/>
+									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
-									
 								</div>
+								<?php $count0++; ?>
 								@endif
 								@endforeach
 							</div>
-							<div class="col-md-3 col-sm-8">
-								<div class="slides">
-								<?php $count =0; ?>
+							<div class="col-md-3 col-sm-5">
+								<?php $count3=0;?>
 								@foreach($img_cat as $img1)
-									<?php if($count == 1) break; ?>
-									@if($img1 -> categories_id == 2)	
-								<div class="news">
-									<img class="news-image" src="..uploads/{{ $img1->file }}"  style="max-height: 180px"/>
-									<h3 class="news-title">{{ $img1 -> description}}</h3>
-									
-								</div>
-								<?php $count++ ?>
-								@endif
-								@endforeach
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-8">
-								@foreach($img_cat as $img1)
+									<?php if($count3==1) break; ?>
 									@if($img1 -> categories_id == 6)
 								<div class="news">
 									<image class="news-image" src="..uploads/{{ $img1->file }}"></image>
 									<h3 class="news-title">{{ $img1 -> description}}</h3>
 									
 								</div>
+								<?php $count3++ ?>
 								@endif
 								@endforeach
 							</div>
@@ -131,7 +122,7 @@
   				<h1><marquee>WELCOME</marquee></h1>
   				<div class="panel panel-default">
     			<div class="panel-body">
-    				<p>Love Crusade Chapel Headquarter church located in Kano State, Nigeria, West Africa. It is a church with the commission of deliverance, prosperity and preparing people for heaven, the encounter for each of these came at different time during the preparation period for the ministry. We have what we call comission declaration such as "God of my covenant appear for me" this is borne out of the threefold covenant which renew every first sunday - evening of each month. We also have another declaration which is "there is victory always in Jesus". The last one which we recite as benediction "I receive grace and determination from Jesus, for the kind of holiness of life that will take me to heaven at the end of my Journey on earth in the name of Jesus</p>
+    				<p>Love Crusade Chapel Headquarter church located in Kano State, Nigeria, West Africa. It is a church with the commission of deliverance, prosperity and preparing people for heaven, the encounter for each of these came at different time during the preparation period for the ministry. We have what we call comission declaration such as <strong><i> "God of my covenant appear before me"</i></strong> this is borne out of the threefold covenant which renew every first sunday - evening of each month. We also have another declaration which is <strong><i>"there is victory always in Jesus"</i></strong>. The last one which we recite as benediction <strong><i>"I receive grace and determination from Jesus</i></strong>, for the kind of holiness of life that will take me to heaven at the end of my Journey on earth in the name of Jesus</p>
     			</div>
   				</div>
 				</div>
@@ -279,7 +270,7 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<h3 class="widget-title">Contact form</h3>
-								<form action="/" method="POST" class="contact-form" value="csrf_token()">
+								<form action="/" method="POST" class="contact-form" value="csrf_token()" id="feedbackForm">
 									<div class="row">
 										<div class="col-md-6"><input type="text" name="fname" placeholder="First name" required></div>
 										<div class="col-md-6"><input type="text" name="lname" placeholder="Lastname " required></div>
@@ -288,7 +279,7 @@
 									</div>
 									
 									<textarea name="message" placeholder="Your message..." required></textarea>
-									<div class="text-right"><input type="submit" onclick="sentMessage(this)" value="Send message"></div>
+									<div class="text-right"><input type="button" id="sendBtn" value="Send message"></div>
 									
 								</form>
 							</div>
@@ -306,24 +297,27 @@
 		<script src="{{ URL::asset('js/jquery-1.11.1.min.js')}}"></script>
 		<script src="{{ URL::asset('js/plugins.js')}}"></script>
 		<script src="{{ URL::asset('js/app/app.js')}}"></script>
+		<script src="{{ URL::asset('dist/sweetalert.min.js')}}"></script>
 		<script>
+		$(document).ready(function(){
+			$("#sendBtn").click(function(){
+				
+				
+			$.ajax({
+  				type: "POST",
+				  url: "/",
+				  data: $('#feedbackForm').serialize(),
+				  success: function(data){
+				  	alert(data);
+				  	$('#feedbackForm').trigger('reset');
+				  }
+				  
+				});
 
-		function sentMessage(del){
-            var url = $(del).attr('message-id');
-            url = "/"+url;
-            $.ajax({
-                url:url,
-                dataType: "JSON",
-                method: "GET",
-                success:function(data){
-                   if(data['status'].match(/success/i)){
-                    
-                        swal("Message Sent"); 
-                   }
-                }
+			});
 
-            });
-        }
+		});
+		
 		</script>
 		
 	</body>

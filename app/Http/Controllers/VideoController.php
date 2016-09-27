@@ -55,7 +55,7 @@ class VideoController extends Controller
     }
     public function readAll()
     {
-        $readVideo = Video::all();
+        $readVideo = \DB::table('videos')->orderBy('id', 'desc')->get();
         if($readVideo){
         //return response()->json(["status"=>"Success","message"=>$readSpecialMsg]);
         return view('sermons')-> with('readVideo', $readVideo);

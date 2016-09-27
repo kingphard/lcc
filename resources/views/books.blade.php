@@ -57,7 +57,9 @@
 						<div class="row">
 							<div class="content col-md-8">
 								<h4 class="section-title">Click to Download Books</h4>
+								<?php $count=0; ?>
 								@foreach( $img_cate as $book_img)
+								<?php if($count==4) break;?>
 								@if($book_img->categories_id==3)
 								<ul class="seremon-list large">
 									<li id="close_frame">
@@ -68,6 +70,7 @@
 										</div>
 									</li>
 								</ul>
+								<?php $count++; ?>
 								@endif
 								@endforeach
 								
@@ -142,7 +145,7 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<h3 class="widget-title">Contact form</h3>
-								<form action="/" method="POST" class="contact-form" value="csrf_token()">
+								<form action="/" method="POST" class="contact-form" value="csrf_token()" id="feedbackForm">
 									<div class="row">
 										<div class="col-md-6"><input type="text" name="fname" placeholder="First name" required></div>
 										<div class="col-md-6"><input type="text" name="lname" placeholder="Lastname " required></div>
@@ -151,7 +154,7 @@
 									</div>
 									
 									<textarea name="message" placeholder="Your message..." required></textarea>
-									<div class="text-right"><input type="submit" onclick="sentMessage(this)" value="Send message"></div>
+									<div class="text-right"><input type="button" id="sendBtn" value="Send message"></div>
 									
 								</form>
 							</div>
@@ -171,7 +174,27 @@
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
 		<script src="{{ URL::asset('dist/sweetalert.min.js')}}"></script>
+		<script>
+		$(document).ready(function(){
+			$("#sendBtn").click(function(){
+				
+				
+			$.ajax({
+  				type: "POST",
+				  url: "/",
+				  data: $('#feedbackForm').serialize(),
+				  success: function(data){
+				  	alert(data);
+				  	$('#feedbackForm').trigger('reset');
+				  }
+				  
+				});
+
+			});
+
+		});
 		
+		</script>
 	</body>
 
 </html>

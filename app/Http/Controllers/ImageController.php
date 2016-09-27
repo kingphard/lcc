@@ -20,7 +20,7 @@ class ImageController extends Controller
     }
     public function index1(){
 
-    	$img_cate = image::all();
+    	$img_cate = \DB::table('images')->orderBy('id', 'desc')->get();
      	return view('books')->with('img_cate', $img_cate);
     }
     public function indexgen()

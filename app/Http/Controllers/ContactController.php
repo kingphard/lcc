@@ -26,7 +26,7 @@ class ContactController extends Controller
         $contact->message = $message;
         $saved=$contact->save();
         if($saved){
-            return response()->json(["Message Sent"]);
+            return response()->json(["Message Sent.. check your mail for reply..if needed"]);
         }
         else
         {

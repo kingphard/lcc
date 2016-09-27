@@ -13,7 +13,7 @@
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
-		
+		<link href="{{ URL::asset('dist/sweetalert.css')}}" rel="stylesheet">
 		<!--[if lt IE 9]-->
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
@@ -39,7 +39,6 @@
 							<li class="menu-item"><a href="events">Events <small>Events / Associations</small></a></li>
 							<li class="menu-item current-menu-item"><a href="#">Mission <small>View our mission</small></a></li>
 							<li class="menu-item"><a href="about_gen">GEN.SUPRETENDENT<small>About the Gen.Supretedent</small></a></li>
-							<li class="menu-item"><a href="#cont">Contact <small>Contact us here</small></a></li>
 						</ul>
 					</div>
 
@@ -142,7 +141,7 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<h3 class="widget-title">Contact form</h3>
-								<form action="/" method="POST" class="contact-form" value="csrf_token()">
+								<form action="/" method="POST" class="contact-form" value="csrf_token()" id="feedbackForm">
 									<div class="row">
 										<div class="col-md-6"><input type="text" name="fname" placeholder="First name" required></div>
 										<div class="col-md-6"><input type="text" name="lname" placeholder="Lastname " required></div>
@@ -151,7 +150,7 @@
 									</div>
 									
 									<textarea name="message" placeholder="Your message..." required></textarea>
-									<div class="text-right"><input type="submit" value="Send message"></div>
+									<div class="text-right"><input type="button" id="sendBtn" value="Send message"></div>
 									
 								</form>
 							</div>
@@ -169,6 +168,28 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
+		<script src="{{ URL::asset('dist/sweetalert.min.js')}}"></script>
+		<script>
+		$(document).ready(function(){
+			$("#sendBtn").click(function(){
+				
+				
+			$.ajax({
+  				type: "POST",
+				  url: "/",
+				  data: $('#feedbackForm').serialize(),
+				  success: function(data){
+				  	alert(data);
+				  	$('#feedbackForm').trigger('reset');
+				  }
+				  
+				});
+
+			});
+
+		});
+		
+		</script>
 		
 	</body>
 
